@@ -1,0 +1,30 @@
+{
+  "name": "cinematic-product-video",
+  "version": "1.0.0",
+  "description": "Cinematic product video built with Remotion",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion bundle",
+    "render": "remotion render Main out/video-16x9.mp4",
+    "render:mobile": "remotion render MainMobile out/video-9x16.mp4",
+    "thumbs": "remotion still Thumb16x9 out/thumb-16x9.png && remotion still Thumb9x16 out/thumb-9x16.png",
+    "all": "npm run render && npm run render:mobile && npm run thumbs",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.469",
+    "@remotion/google-fonts": "4.0.469",
+    "@remotion/noise": "4.0.469",
+    "@remotion/transitions": "4.0.469",
+    "@remotion/shapes": "4.0.469",
+    "@remotion/paths": "4.0.469",
+    "@remotion/layout-utils": "4.0.469",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.469"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.0",
+    "typescript": "5.6.3"
+  }
+}
